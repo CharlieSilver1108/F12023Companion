@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is originally how I populated the recyclerViews, before Room -->
+
+<resources>
+<!--    <string-array name="drivers">-->
+<!--        <item>Max VERSTAPPEN</item>-->
+<!--        <item>Sergio PEREZ</item>-->
+<!--        <item>Lewis HAMILTON</item>-->
+<!--        <item>George RUSSELL</item>-->
+<!--        <item>Charles LECLERC</item>-->
+<!--        <item>Carlos SAINZ</item>-->
+<!--        <item>Lando NORRIS</item>-->
+<!--        <item>Oscar PIASTRI</item>-->
+<!--        <item>Fernando ALONSO</item>-->
+<!--        <item>Lance STROLL</item>-->
+<!--        <item>Pierre GASLY</item>-->
+<!--        <item>Esteban OCON</item>-->
+<!--        <item>Alexander ALBON</item>-->
+<!--        <item>Logan SERGEANT</item>-->
+<!--        <item>Yuki TSUNODA</item>-->
+<!--        <item>Daniel RICCIARDO</item>-->
+<!--        <item>Valtteri BOTTAS</item>-->
+<!--        <item>Guanyu ZHOU</item>-->
+<!--        <item>Nico HULKENBERG</item>-->
+<!--        <item>Kevin MAGNUSSEN</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="numbers">-->
+<!--        <item>1</item>-->
+<!--        <item>11</item>-->
+<!--        <item>44</item>-->
+<!--        <item>63</item>-->
+<!--        <item>16</item>-->
+<!--        <item>55</item>-->
+<!--        <item>4</item>-->
+<!--        <item>81</item>-->
+<!--        <item>14</item>-->
+<!--        <item>18</item>-->
+<!--        <item>10</item>-->
+<!--        <item>31</item>-->
+<!--        <item>23</item>-->
+<!--        <item>2</item>-->
+<!--        <item>22</item>-->
+<!--        <item>3</item>-->
+<!--        <item>77</item>-->
+<!--        <item>24</item>-->
+<!--        <item>27</item>-->
+<!--        <item>20</item>-->
+<!--    </string-array>-->
+
+
+<!--    <string-array name="teams">-->
+<!--        <item>Oracle Red Bull Racing</item>-->
+<!--        <item>Mercedes AMG Petronas F1 Team</item>-->
+<!--        <item>Scuderia Ferrari</item>-->
+<!--        <item>Mclaren F1 Team</item>-->
+<!--        <item>Aston Martin Aramco Cognizant F1 Team</item>-->
+<!--        <item>BWT Alpine F1 Team</item>-->
+<!--        <item>Williams Racing</item>-->
+<!--        <item>Scuderia AlphaTauri</item>-->
+<!--        <item>Alfa Romeo F1 Team Stake</item>-->
+<!--        <item>MoneyGram Haas F1 Team</item>-->
+<!--    </string-array>-->
+
+</resources>

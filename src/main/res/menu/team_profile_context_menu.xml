@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Used By TeamProfileFragment -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/set_as_favourite_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Set As Favourite Team" />
+
+    <item
+        android:id="@+id/open_base_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="See Base Location" />
+</menu>

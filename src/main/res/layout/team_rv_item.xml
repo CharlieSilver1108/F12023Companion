@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Used by TeamAdapter to fill the teams_rv_activity for TeamsRVActivity -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rv_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/rv_team_colour"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/black"/>
+
+        <ImageView
+            android:id="@+id/rv_team_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/red_bull_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_team_colour"
+            app:layout_constraintEnd_toStartOf="@+id/rv_team_name"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Team Logo" />
+
+        <TextView
+            android:id="@+id/rv_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="Oracle Red Bull Racing"
+            android:fontFamily="@font/poppins_semibold"
+            app:layout_constraintStart_toEndOf="@+id/rv_team_logo"
+            app:layout_constraintTop_toBottomOf="@+id/rv_team_colour"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="18dp"/>
+
+        <ImageView
+            android:id="@+id/rv_team_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/red_bull_car"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_team_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Team Car" />
+
+        <TextView
+            android:id="@+id/rv_team_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="Pts: 123"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_team_car"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginTop="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

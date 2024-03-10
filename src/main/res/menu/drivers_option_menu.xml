@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Used by DriversRVActivity -->
+
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/options_menu_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_search_24"
+        android:title="Search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/options_menu_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_toggle_on_24"
+        android:title="Switch Theme"
+        app:showAsAction="ifRoom" />
+        <!-- app:actionLayout="@layout/switch_item" -->
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Favourite Driver" >
+
+        <menu>
+            <item
+                android:id="@+id/options_menu_set_favourite_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Set Favourite Driver" />
+
+            <item
+                android:id="@+id/options_menu_remove_favourite_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Remove Favourite Driver" />
+        </menu>
+    </item>
+</menu>

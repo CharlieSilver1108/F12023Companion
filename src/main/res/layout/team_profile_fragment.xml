@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Used by TeamProfileFragment -->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drivers.DriverProfileFragment">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout">
+
+            <TextView
+                android:id="@+id/homeTitle"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Profile"
+                android:textColor="@color/f1"
+                android:textSize="40sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/homeImage" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeDesc"
+                android:text="Everything about the team"
+                android:textSize="14sp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homeTitle"
+                app:layout_constraintEnd_toStartOf="@+id/homeImage" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:id="@+id/homeImage"
+                android:src="@drawable/f1_logo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toEndOf="@+id/homeTitle"
+                android:contentDescription="F1 Logo" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/row1"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homeImage"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teamsCard"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="20dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/team_colour"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:background="@color/black"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:id="@+id/teamImage"
+                            android:src="@drawable/red_bull_logo"
+                            app:layout_constraintTop_toTopOf="@id/teamName"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginEnd="2dp"
+                            app:layout_constraintStart_toEndOf="@+id/teamName"
+                            android:contentDescription="Team Logo" />
+
+                        <TextView
+                            android:id="@+id/teamName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Team Name"
+                            android:textColor="@color/f1"
+                            android:textSize="20sp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="40dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/teamImage" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teamPrinciple"
+                            android:text="Team Principle:"
+                            android:textSize="14sp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/teamName"
+                            app:layout_constraintEnd_toStartOf="@+id/teamImage" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/carModel"
+                            android:text="Car Model:"
+                            android:textSize="14sp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/teamPrinciple"
+                            app:layout_constraintEnd_toStartOf="@+id/teamImage" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/engineSupplier"
+                            android:text="Engine Supplier:"
+                            android:textSize="14sp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/carModel"
+                            app:layout_constraintEnd_toStartOf="@+id/teamImage" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/baseLocation"
+                            android:text="Base Location:"
+                            android:textSize="14sp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/engineSupplier"
+                            app:layout_constraintEnd_toStartOf="@+id/teamImage" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teamPoints"
+                            android:text="WCC Points:"
+                            android:textSize="14sp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/baseLocation"
+                            app:layout_constraintEnd_toStartOf="@+id/teamImage" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teamPosition"
+                            android:text="WCC Position:"
+                            android:textSize="14sp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/teamPoints"
+                            app:layout_constraintEnd_toStartOf="@+id/teamImage" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teamBio"
+                            android:text="Bio:"
+                            android:textSize="14sp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/teamPosition"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:id="@+id/carImage"
+                            android:src="@drawable/red_bull_car"
+                            app:layout_constraintTop_toBottomOf="@id/teamBio"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginEnd="2dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="2dp"
+                            android:contentDescription="Team Car" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
