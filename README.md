@@ -12,5 +12,6 @@ My app is configured in Java, the only additional implementations required being
 *It has been tested, and working, on Android Studio, android API 33, gradle 8.4.*
 
 ## Other:
+Note that the Activities can be found here: src/main/java/com/example/coursework
 #### Future Improvements
 One future improvement would definitely be expansion of the app - to implement some of the remaining packages. Although I took extra time to ensure that this should not be a momentous task, it would still involve lots of UI styling and tweaking. Another thing I was looking at was the ability to integrate an F1 API to add some more live data to the app, such as race updates/results instead of just historical data, however again my hardware limited me in doing so.
